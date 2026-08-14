@@ -1,0 +1,10 @@
+# Typst
+*.pdf
+*.png
+*.svg
+*.html
+!example.png
+
+# Test
+test/
+example.typ
