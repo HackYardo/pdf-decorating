@@ -49,7 +49,7 @@ If you see some brand-new visuals, open issues please!
 </details>
 
 ## Usage
-1. Download the [Typst](https://typst.app) PDF compiler
+1. Download the [Typst](https://typst.app/open-source/#download) PDF compiler
 2. Copy the code block into a file with name `example.typ`
 3. `typst compile example.typ && firefox example.pdf`
 
@@ -57,7 +57,7 @@ If you see some brand-new visuals, open issues please!
   <summary>Code Block</summary>
 
 ```typ
-#import "@preview/pdf-decorating:0.1.0": *
+#import "@preview/pdf-decorating:0.1.1": *
 
 #set page(paper:"a5", columns:2)
 #set heading(numbering:"I.1")
