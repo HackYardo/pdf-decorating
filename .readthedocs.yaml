@@ -12,11 +12,10 @@
      # https://docs.readthedocs.com/platform/stable/build-customization.html#install-dependencies-with-uv
      install:
        - pip install zensical
-       - aria2c -x2 'https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz' -o typst.tar.xz
-       - tar -xf typst.tar.xz
-       - pwd
-       - ls -a
-       - ./typst/typst c example.typ docs/example.svg
+       - aria2c -x2 'https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz' -o t.tar.xz
+       - tar -xf t.tar.xz
+       - mv typst-x86_64-unknown-linux-musl/ third/
+       - ./third/typst c example.typ docs/example.svg
        - rm typ*.xz
      build:
        html:
