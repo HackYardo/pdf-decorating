@@ -14,12 +14,12 @@
        - pip install zensical
        - aria2c -x2 'https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz' -o typst.tar.xz
        - tar -xf typst.tar.xz
-       - mv typst/typst .
+       - pwd
+       - ls -a
+       - ./typst/typst c example.typ docs/example.svg
        - rm typ*.xz
-       - rm typst/ -r
      build:
        html:
-         - ./typst c example.typ docs/example.svg
          - zensical build
      post_build:
        # Copy the built site into the directory Read the Docs publishes.
