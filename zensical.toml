@@ -1,5 +1,5 @@
 [project]
-#site_url = "https://www.example.com/"
+site_url = "https://pdf-decorating.readthedocs.io/"
 site_name = "PDF Decorating"
 site_description = "PDF Web UI Library"
 site_author = "왕쯔페이"

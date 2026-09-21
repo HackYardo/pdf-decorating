@@ -22,7 +22,7 @@ Web visuals are from CommonMark, GitHub Markup (GitHub Flavored Markdown (GFM)),
 
 === "Example"
 
-    ![example](example.png)
+    ![example](example.svg)
 
 === "Code Block"
 
@@ -96,13 +96,14 @@ Web visuals are from CommonMark, GitHub Markup (GitHub Flavored Markdown (GFM)),
     
     $ # Linux
     $ cd ~/Downloads/
-    $ aria2c -x2 'source' -o typst.tar.xz # (3)!
+    $ aria2c -x2 'source' -o typst.tar.xz
+    $ # sources: (3)
     $ tar -xf typ(Tab) # (4)!
     $ rm typ*.xz
     $ ln -s ~/Downloads/typst/typst ~/bin/typst
     ```
     
-    1.  https://termux.dev/en/
+    1.  from Termux: https://termux.dev/en/
     2.  for iphone or ipad, search GitHub or App Store
     3.  - GitHub: https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz
         - USTC: https://mirrors.ustc.edu.cn/ > 获取开源软件 > Typst

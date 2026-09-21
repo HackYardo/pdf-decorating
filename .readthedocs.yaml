@@ -4,13 +4,16 @@
    os: ubuntu-24.04
    tools:
      python: latest
+     rust: latest
    jobs:
      # For reproducible builds, install with uv:
      # https://docs.readthedocs.com/platform/stable/build-customization.html#install-dependencies-with-uv
      install:
        - pip install zensical
+       - cargo install --locked typst-cli
      build:
        html:
+         - typst c example.typ docs/example.svg
          - zensical build
      post_build:
        # Copy the built site into the directory Read the Docs publishes.
