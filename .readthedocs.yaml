@@ -4,6 +4,9 @@
    os: ubuntu-24.04
    tools:
      python: latest
+   apt_packages:
+     - aria2
+     - tar
    jobs:
      # For reproducible builds, install with uv:
      # https://docs.readthedocs.com/platform/stable/build-customization.html#install-dependencies-with-uv
